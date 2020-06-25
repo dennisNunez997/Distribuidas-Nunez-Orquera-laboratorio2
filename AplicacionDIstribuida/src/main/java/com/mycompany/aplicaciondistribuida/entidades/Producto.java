@@ -6,6 +6,7 @@
 package com.mycompany.aplicaciondistribuida.entidades;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -114,6 +115,10 @@ public class Producto implements Serializable {
     @Override
     public String toString() {
         return "com.mycompany.aplicaciondistribuida.entidades.Producto[ codigo=" + codigo + " ]";
+    }
+
+    public void setPrecio(BigDecimal bd1) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
